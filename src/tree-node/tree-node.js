@@ -1,13 +1,13 @@
-class Tree extends HTMLElement {
+const template = (scope) => `<ul class="node">
+  <li><small>No Node</small></li>
+</ul>`;
+
+class Node extends HTMLElement {
   connectedCallback(){
     this.render();
   }
   render() {
-    this.innerHTML = `
-    <ul class="node">
-      <li><small>No Node</small></li>
-    </ul>
-    `
+    this.innerHTML = template();
   }
 }
-customElements.define('tree-component', Tree);
+customElements.define('tree-node', Node);

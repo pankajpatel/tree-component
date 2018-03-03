@@ -1,1 +1,1 @@
-require('./tree-node/tree-node');
+require('./tree-component/tree-component');
