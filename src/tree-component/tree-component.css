@@ -1,5 +1,27 @@
+tree-component {
+  display: block;
+  overflow: hidden;
+}
+
 .tree {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+ .tree > li {
+   padding: 0 0 0 10px;
+   position: relative;
+ }
+ .tree > li:before {
+  content: '▸';
+  font-size: 10px;
+  position: absolute;
+  left: 0;
+  display: block;
+ }
+.collapsed > tree-component { 
+  height: 0;
+}
+.expanded > tree-component { 
+  height: auto;
 }
