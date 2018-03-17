@@ -11,7 +11,7 @@ const template = (scope) => `
 <style>${css}</style>
 ${scope.data instanceof Array
   ? `<ul class="tree">
-      ${scope.data.map(item => `<li class="collapsed"><small>${label(item)}</small>${node({item})}</li>`).join('')}
+      ${scope.data.map(item => `<li class="collapsed"><tree-node text='${label(item)}'></tree-node>${node({item})}</li>`).join('')}
     </ul>`
   : scope.data
 }`;

@@ -25,3 +25,7 @@ tree-component {
 .expanded > tree-component { 
   height: auto;
 }
+
+.tree-node {
+  display: inline-block;
+}
